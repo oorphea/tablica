@@ -15,15 +15,18 @@ body {
     display: flex;
     justify-content: center; /* Wyśrodkuj poziomo */
     align-items: center; /* Wyśrodkuj w pionie */
+    margin-top: 60px; /* Dodaj margines u góry kontenera przycisków, aby oddzielić od tekstu */
 }
 
 .przycisk {
     cursor: pointer;
     margin: 0 30px; /* Dodaj odstępy między obrazkami tylko poziomo */
+
 }
 .przycisk img {
     max-width: 80%; /* Maksymalna szerokość obrazka, aby zachować proporcje */
     max-height: 80%; /* Maksymalna wysokość obrazka, aby nie wychodził poza ekran */
+
 }
 
 @font-face {
@@ -34,23 +37,42 @@ body {
 body {
     font-family: 'Edu TAS Beginner', sans-serif;
 }
+
+        .przycisk .tekst {
+            font-size: 25px;
+            color: #F0E68C;
+            margin-top: 20px;
+    background-color: #000000; /* Kolor tła */
+    background-color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+ padding: 5px;
+ border-radius: 10px;
+
+        }
 </style>
 </head>
 <body>
-    <h1>Witaj na mojej stronie!</h1>
-    <p>To jest moja pierwsza strona internetowa stworzona w Notatniku.</p>
-
+    <h1 style="line-height: 1; color: #F0E68C; font-size: 70px;" >✰ Tablica ✰</h1>
+    <p style="line-height: 0.1; color: #F0E68C; font-size: 25px;">Dziala w koncu!!!!!</p>
     <div class="przyciski">
         <div class="przycisk">
             <img src="images/daed31cb4a565084b343893990e1e4ef.jpg" alt="Przycisk 1" onclick="akcjaPoKliknieciu1()">
+            <div class="tekst">Filmy i seriale</div>
         </div>
 
         <div class="przycisk">
             <img src="images/603652b4a7252f54952b7f9a7d97acf9.jpg" alt="Przycisk 2" onclick="akcjaPoKliknieciu2()">
+            <div class="tekst">Projekty</div>
         </div>
 
         <div class="przycisk">
             <img src="images/4375b7d9bf24b88aa53744b417227485.jpg" alt="Przycisk 3" onclick="akcjaPoKliknieciu3()">
+            <div class="tekst">Tytuly ksiazek</div>
+        </div>
+
+        <div class="przycisk">
+            <img src="images/24ef08c0fc964a1d8bc945d69d034a7c.jpg" alt="Przycisk 4" onclick="akcjaPoKliknieciu4()">
+            <div class="tekst">Research ☝️</div>
         </div>
     </div>
 
@@ -64,6 +86,10 @@ body {
         }
 
         function akcjaPoKliknieciu3() {
+            window.location.href = "https://carrd.co/dashboard/8287169856018145/edit";
+        }
+
+        function akcjaPoKliknieciu4() {
             window.location.href = "https://carrd.co/dashboard/8287169856018145/edit";
         }
     </script>
