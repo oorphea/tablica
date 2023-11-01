@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moja Strona Internetowa</title>
+
+<style>
+body {
+    text-align: center;
+    background-image: url("file:///C:/Users/marta/Desktop/8707fa592d1cb37b3023e9671f96346a.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+            
+.przyciski {
+    display: flex;
+    justify-content: center; /* Wyśrodkuj poziomo */
+    align-items: center; /* Wyśrodkuj w pionie */
+}
+
+.przycisk {
+    cursor: pointer;
+    margin: 0 30px; /* Dodaj odstępy między obrazkami tylko poziomo */
+}
+.przycisk img {
+    max-width: 80%; /* Maksymalna szerokość obrazka, aby zachować proporcje */
+    max-height: 80%; /* Maksymalna wysokość obrazka, aby nie wychodził poza ekran */
+}
+
+@font-face {
+    font-family: 'Edu TAS Beginner';
+    src: url('edutasbeginner-variablefont_wght-webfont.woff') format('woff');
+}
+
+body {
+    font-family: 'Edu TAS Beginner', sans-serif;
+}
+</style>
+</head>
+<body>
+    <h1>Witaj na mojej stronie!</h1>
+    <p>To jest moja pierwsza strona internetowa stworzona w Notatniku.</p>
+
+    <div class="przyciski">
+        <div class="przycisk">
+            <img src="file:///C:/Users/marta/Desktop/daed31cb4a565084b343893990e1e4ef.jpg" alt="Przycisk 1" onclick="akcjaPoKliknieciu1()">
+        </div>
+
+        <div class="przycisk">
+            <img src="file:///C:/Users/marta/Desktop/603652b4a7252f54952b7f9a7d97acf9.jpg" alt="Przycisk 2" onclick="akcjaPoKliknieciu2()">
+        </div>
+
+        <div class="przycisk">
+            <img src="file:///C:/Users/marta/Desktop/4375b7d9bf24b88aa53744b417227485.jpg" alt="Przycisk 3" onclick="akcjaPoKliknieciu3()">
+        </div>
+    </div>
+
+    <script>
+        function akcjaPoKliknieciu1() {
+            window.location.href = "https://carrd.co/dashboard/8287169856018145/edit";
+        }
+
+        function akcjaPoKliknieciu2() {
+            window.location.href = "https://carrd.co/dashboard/8287169856018145/edit";
+        }
+
+        function akcjaPoKliknieciu3() {
+            window.location.href = "https://carrd.co/dashboard/8287169856018145/edit";
+        }
+    </script>
+</body>
+</html>
